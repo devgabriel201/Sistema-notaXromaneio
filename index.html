@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="icon" href="./img/favicon.jpeg">
+    <link rel="stylesheet" href="./style/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN do canvas-confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Enriqueta:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Nota X Romaneio</title>
+</head>
+
+<body>
+    <div class="notaMain-area">
+    <span class="title-main"><h1>Area da Nota</h1></span>
+
+    <div class="container2">
+
+        <div class="button2-1">
+            <input class="input-nota" type="number" placeholder="Criar campos"/>
+            <button class="buttonNot"><b>Criar campos</b></button>
+        </div>
+
+        <div class="areaNot1">
+            <div class="input-area-1"><h3>Código</h3>
+                <input type="number" placeholder="Cód nº1" />
+                <input type="number" placeholder="Cód nº2" />
+                <input type="number" placeholder="Cód nº3" />
+                <input type="number" placeholder="Cód nº4" />
+                <input type="number" placeholder="Cód nº5" />
+                <input type="number" placeholder="Cód nº6" />
+                <input type="number" placeholder="Cód nº7" />
+                <input type="number" placeholder="Cód nº8" />
+            </div>
+            <div class="input-area-2"><h3>Quantidade</h3>
+                <input type="number" placeholder="Qtd nº1" />
+                <input type="number" placeholder="Qtd nº2" />
+                <input type="number" placeholder="Qtd nº3" />
+                <input type="number" placeholder="Qtd nº4" />
+                <input type="number" placeholder="Qtd nº5" />
+                <input type="number" placeholder="Qtd nº6" />
+                <input type="number" placeholder="Qtd nº7" />
+                <input type="number" placeholder="Qtd nº8" />
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+
+        <div class="romaneioMain-area">
+
+        <span class="title-main"><h1>Area do Romaneio</h1></span>
+
+            <div class="container">
+
+                <div class="button1-1">
+                    <input class="input-rom" type="number" placeholder="Criar campos"/>
+                    <button class="buttonRom"><b>Criar campos</b></button>
+                </div>
+
+                <div class="areaRom1">
+                    <div class="input-area-3"><h3>Código</h3>
+                        <input type="number" placeholder="Cód nº1" />
+                        <input type="number" placeholder="Cód nº2" />
+                        <input type="number" placeholder="Cód nº3" />
+                        <input type="number" placeholder="Cód nº4" />
+                        <input type="number" placeholder="Cód nº5" />
+                        <input type="number" placeholder="Cód nº6" />
+                        <input type="number" placeholder="Cód nº7" />
+                        <input type="number" placeholder="Cód nº8" />
+                    </div>
+                    <div class="input-area-4"><h3>Quantidade</h3>
+                        <input type="number" placeholder="Qtd nº1" />
+                        <input type="number" placeholder="Qtd nº2" />
+                        <input type="number" placeholder="Qtd nº3" />
+                        <input type="number" placeholder="Qtd nº4" />
+                        <input type="number" placeholder="Qtd nº5" />
+                        <input type="number" placeholder="Qtd nº6" />
+                        <input type="number" placeholder="Qtd nº7" />
+                        <input type="number" placeholder="Qtd nº8" />
+                    </div>
+                </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="finalButtons">
+        <button class="clear">Limpar Campos Vazios</button>
+        <button class="buttonSave">Salvar Progresso</button>
+        <button class="buttonGet">Carregar dados</button>
+        <button class="verify">Verificar</button>
+    </div>
+
+    <div class="warning">
+        <div class="board">
+            <div class="x">X</div>
+            
+        <h2>Bem-vindo ao sistema de comparação Nota X Romaneio!</h2>
+
+        <p>
+            Este sistema foi desenvolvido com o objetivo de agilizar o processo
+            de comparação dos dados da nota fiscal com os dos romaneios,
+            utilizando os SKUs dos produtos e suas respectivas quantidades.
+        </p>
+
+        <h4>Como utilizar o sistema?</h4>
+
+        <p>
+            O sistema possui duas áreas principais: uma destinada à nota fiscal
+            e outra aos romaneios. Insira cada informação em sua respectiva área.
+            Não se preocupe com a quantidade de campos! É possível criar até
+            <strong>10.000 campos</strong> no total entre as duas áreas.
+            Basta informar a quantidade desejada.
+        </p>
+
+
+        <h4>Outras funções:</h4>
+
+        <p>
+            No canto inferior da página, também estão disponíveis alguns botões,
+            cada um com uma função específica. É possível limpar os campos
+            preenchidos, salvar as informações e carregar os dados salvos.
+            Logo em seguida, encontra-se o botão responsável por verificar se
+            os dados informados na nota estão de acordo com os dados presentes
+            nos romaneios.
+        </p>
+
+        <p>
+            Caso seja identificada alguma divergência, o sistema informará
+            <strong>qual código apresenta o erro e em qual campo a informação
+            está divergente</strong>, facilitando a identificação e correção
+            do problema.
+        </p>
+
+        <p>
+            <strong>Isso é tudo... Agora, mãos à obra!</strong>
+        </p>
+
+        </div>
+    </div>
+
+<script src="./scripts/script.js"></script>
+
+
+</body>
+</html>

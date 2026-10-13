@@ -1,0 +1,379 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:linear-gradient(to right,#000000 ,#3c3c3c);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/cd.png);
+    background-size: cover;
+}
+
+body:has(.warning) {
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.notaMain-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-nota {
+    width:30%;
+}
+
+.input-rom {
+    width:30%;
+}
+
+h3{
+    color:#f8da13;
+    text-shadow: 1px 1px 1px rgb(143, 102, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Romaneio Area */
+
+.container{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 15px #b9a600;
+    height:570px;
+    width: 50%;
+    margin:30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    padding:10px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #7b7102, #feffb5);
+    border: 2px solid black;
+    cursor:pointer;
+    font-family: "DM Serif Text", serif;
+}
+
+.buttonSave {
+    background: linear-gradient(to bottom, #0060b4, #79fff2);
+}
+
+input{
+    width:65%;
+    border-radius:8px;
+    padding:7px;
+}
+
+.areaRom1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 30px;
+    gap:50px;
+    height:80%;
+
+}
+
+.input-area-3{
+    height:100%;
+    padding-top:2px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap:15px;
+}
+
+.input-area-4{
+    height:100%;
+    width:100%;
+    padding-top:2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap:15px;
+}
+
+.button1-1{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin-bottom: 50px;
+}
+
+.romaneioMain-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Nota Area */
+
+
+.title-main{
+    color:rgb(189, 120, 0);
+    text-shadow: 1px 1px 1px #601e1e;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+.title-main h1{
+    background-color: rgba(1, 1, 1, 0.8);
+    box-shadow:1px 1px 3px #dc9600 ;
+    border-radius: 10px;
+    padding:3px;
+    font-family: "DM Serif Text", serif;
+
+}
+
+.container2{
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 15px #b9a600;
+    height:570px;
+    width: 50%;
+    margin:30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.areaNot1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 50px;
+    gap:50px;
+    height:80%;
+
+}
+
+.input-area-1{
+    height:100%;
+    padding-top:2px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap:15px;
+}
+
+.input-area-2{
+    height:100%;
+    width:100%;
+    padding-top:2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap:15px;
+}
+
+input{
+    border-radius: 10px;
+    width:80%;
+
+}
+
+.container2 .button2-1{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap:30px;
+    margin-bottom: 50px;
+}
+
+
+
+/*Final buttons area */
+
+.finalButtons{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    gap: 70px;
+    margin: 50px 0px;
+    justify-content: center;
+}
+
+.finalButtons button{
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+.finalButtons .clear{
+    background: linear-gradient(to bottom, rgb(245, 0, 0), #d6d2ff);
+    display:block;
+}
+
+.finalButtons .verify{
+    background: linear-gradient(to bottom, #00dc12, #93c9eb);
+    display:block;
+}
+
+.warning {
+    position: fixed;
+    inset: 0;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+}
+
+.warning .board .x {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor:pointer;
+    font-size: 30px;
+    color: rgb(182, 182, 182);
+    text-shadow: 1px 1px 2px #111 ;
+}
+
+.warning .board .x:hover {
+    color: #fff;
+    transform: scale(1.2)
+}
+
+.warning .board {
+    position: relative;
+    text-align: center;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0px 0px 5px #fff;
+    border-radius: 20px;
+    gap: 40px;
+    padding: 50px;
+}
+
+.board h2 {
+    color: #dc9600;
+    text-shadow: 1px 1px 1px #ff1212;
+    font-size: 30px;
+}
+
+.board h4 {
+    font-size: 25px;
+    color: #c69e00;
+}
+
+.board p {
+    font-size: 18px;
+}
+
+@media(max-width: 1440px) {
+    .warning .board {
+        gap:30px;
+    }
+
+    .board h2 {
+    font-size: 25px;
+    }
+
+    .board h4 {
+    font-size: 20px;
+    }
+
+    .board p {
+    font-size: 14px;
+    }
+
+}
+
+@media(max-width: 1024px) {
+    .finalButtons{
+        grid-template-columns: repeat(2, 250px);
+        gap: 50px;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 768px) {
+    .warning .board .x {
+        top: 10px;
+        right: 18px;
+    }
+
+    .board h2 {
+    font-size: 22px;
+    }
+
+    .board h4 {
+    font-size: 17px;
+    }
+
+    .board p {
+    font-size: 14px;
+    }
+}
+
+@media(max-width: 560px) {
+    .warning .board {
+        justify-content: flex-start;
+        overflow: scroll;
+    }
+
+    .warning .board .x {
+        top: 15px;
+        right: 20px;
+    }
+
+    .container2, .container{
+        width: 90%;
+    }
+
+    .finalButtons {
+        grid-template-columns: repeat(1, 250px);
+        gap:30px;
+    }
+
+    .areaNot1 {
+        gap:30px;
+        margin: 0 30px;
+    }
+
+    .areaRom1 {
+        gap:30px;
+        margin: 0 30px;
+    }
+}
+
+@media(max-width: 425px) {
+    .warning .board {
+        padding: 40px;
+    }
+}
