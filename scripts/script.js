@@ -13,7 +13,6 @@
     let quantidadeAtualRom2 = document.querySelectorAll('.input-area-4 input').length;
 
 function createInput(){
-dfdfdf
     scrollBarNota.style.overflow = 'auto'
     let value = Number(notaField.value);
 
